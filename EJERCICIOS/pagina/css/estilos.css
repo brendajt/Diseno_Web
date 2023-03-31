@@ -1,0 +1,124 @@
+
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Crimson Text', serif;}
+
+nav p{
+    color:#684ea6; /*color de mi texto*/
+   /* background-color: #E8EBF7; /* Color de la cajita de mi texto */
+    font-size: 20px; /* tamaño de letra de mi texto*/
+    text-align: left; /* orientación de mi texto*/
+    letter-spacing: 5px; /*Espacio entre letras*/
+    word-spacing: 10px; /* Espacio entre palabras*/
+    text-shadow: -5px +5px 4px black; /*Metemos sombra a nuestro texto*/
+    font-weight: bold; /* letras negritas e intensidad*/
+}
+
+
+
+a {
+    text-decoration: none; /*Para quitar subrayado*/
+    color: white; 
+    border: solid 1px black;
+    background-color: #684ea6; 
+    padding:10px;
+    border-radius: 20px;
+}
+
+li{
+    margin: 30px;
+    list-style-type: none; /* Para quitar los puntitos que aparecen para representar las listas*/
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between; /*Alineación horizontal*/
+    align-items: center; /*Alineación Vertical */
+    height: 30%;
+}
+ul{
+    display: flex;
+}
+nav img{
+    width: 10%;
+}
+.caja{
+    display: flex;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    
+}
+.cajita{
+width: 50%;
+text-align: center;
+}
+.cajita img{
+    width: 100%;
+}
+span{
+    color: #684ea6 ;
+}
+
+h1 {
+    font-size: 4em;
+}
+p{
+    margin-bottom: 30px;
+}
+
+        /* Termina barra de navegación */ 
+
+        /*Establecer un tamaño al header*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(  rgba(170, 62, 213, 0.936),white );
+
+}
+
+.acerca {
+    height: 150vh;
+    background: url(../img/fondo-ondulado-morado_1035-8665.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+h2{
+    text-align: center;
+    font-size: 3em;
+}
+.acerca1{
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acerca2 {
+    width: 50%;
+    height: 50vh;
+    background: linear-gradient(to right, rgba(170, 62, 213, 0.455), rgba(217, 164, 238, 0.449) ); /*Fondo de derecha a izquierda*/ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius:50px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Pseudoclases HOVER */ 
+/* Es cambiar el estilo predeterminado cuando pase algo*/
+
+a:hover{ /*Cuando pase el mouse por las "a" va a pasar algo*/
+    color: rgb(106, 0, 255);
+    font-size: 30px;
+    background-color: rgb(188, 171, 210);
+}
