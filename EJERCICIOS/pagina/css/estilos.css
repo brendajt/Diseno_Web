@@ -1,4 +1,3 @@
-
 *{
     margin: 0; 
     padding: 0;
@@ -121,4 +120,66 @@ a:hover{ /*Cuando pase el mouse por las "a" va a pasar algo*/
     color: rgb(106, 0, 255);
     font-size: 30px;
     background-color: rgb(188, 171, 210);
+}
+
+/* Division paralax */
+.paralax{
+    width: 100%;
+    height: 50vh;
+    background: url(../img/pexels-felix-mittermeier-957040\ \(1\).jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed; /* Efecto de estar pegada*/
+}
+
+.paralax p {
+    width: 60%;
+    background-color: rgba(37, 69, 69, 0.532);
+    padding: 30px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa; /* da un brillo, tipo neón a mi texto*/ 
+}
+
+/*Comienza PORTAFOLIO*/
+.portafolio{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fondo-ondulado-morado_1035-8665\(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.portafolio1 {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portafolio2 {
+    width: 60%;
+    height: 70vh;
+    border: solid 3px rgb(44, 95, 235);
+    display: flex;
+   
+}
+
+.portafolio2 img {
+    width: 0;
+    flex-grow: 1; /*agarra el espacio que le corresponde*/
+    object-fit: cover; /*agarra el espacio sin rebazar*/
+    opacity: .8 ; 
+    transition: .5s ease; /*2 pasos, el primero a la img */
+
+}
+
+.portafolio2 img:hover {
+    cursor: crosshair; /*Cursor se pone en cruz*/
+    width: 40%;
+    opacity: 1;
+    filter: contrast(120%);
 }
